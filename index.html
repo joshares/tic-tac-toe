@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <script src="./index.js" defer></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+ <title>tic-tac-toe</title>
+</head>
+<body>
+  <main class="intro">
+   <div class="main">
+    <div class="game-name"><h4>Tic Tac Toe</h4></div>
+    <div class="game-players">
+     <div><p>select which player you want to be?</p></div>
+     <div class="player flex">
+      <div class="players player-x"><p>Player (x)</p></div>
+      <div class="players player-o"><p>Player (o)</p></div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <main class="start hidden">
+   <div class="game">
+    <div class="turns flex">
+     <div class="x-turn turn"> <p>X's Turn</p></div>
+     <div class="o-turn turn blur"><p>O's Turn</p></div>
+    </div>
+    <div class="game-board">
+     <div class="tick one"><h1></h1></div>
+     <div class="tick two"><h1></h1></div>
+     <div class="tick three"><h1></h1></div>
+     <div class="tick four"><h1></h1></div>
+     <div class="tick five"><h1></h1></div>
+     <div class="tick six"><h1></h1></div>
+     <div class="tick seven"><h1></h1></div>
+     <div class="tick eight"><h1></h1></div>
+     <div class="tick nine"><h1></h1></div>
+    </div>
+   </div>
+  </main>
+  <main class="end hidden">
+   <div class="game-end">
+    <div class="done">
+     <h4>player X won the game</h4>
+    </div>
+    <div class="replay">
+     <p><a href="./index.html">Replay</a></p>
+    </div>
+   </div>
+  </main>
+</body>
+</html>
