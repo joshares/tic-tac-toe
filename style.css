@@ -1,0 +1,129 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ max-width: 1440px;
+ background-color: brown;
+ font-family: 'Comfortaa', cursive;
+}
+.hidden {
+ display: none;
+}
+
+/* game intro///////// */
+
+main {
+ margin-top: 15%;
+} 
+.main {
+ background-color: white;
+ height: 200px;
+ width: 30%;
+ padding: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin: 0 auto ;
+}
+.flex {
+ display: flex;
+ justify-content: space-between;
+}
+.game-name {
+ padding-bottom: 2em;
+}
+.game-players {
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+}
+.players {
+ width: 40%;
+ color: white;
+ padding: 0.5em;
+ background-color: brown;
+}
+.players:hover {
+ background-color: rgb(219, 115, 115);
+}
+.players:active{
+ background-color: rgb(228, 123, 123);
+}
+
+
+/* start game ////// */
+
+.game {
+ margin: 0 auto;
+ width: 30%;
+}
+.turns {
+ padding: 1em;
+ background-color: white;
+ margin-bottom: 1em;
+}
+.turn {
+ width: 40%;
+ background-color: brown;
+ padding: 0.5em;
+ color: white;
+}
+.blur {
+  /* display: none; */
+  background-color: white;
+}
+.tick {
+ background-color: white;
+ height: 6em;
+ border-radius: 0.3em;
+ color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-board {
+ display: grid;
+ grid-template-rows: 1fr ;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* end game ///////  */
+
+.game-end {
+ margin: 0 auto;
+ width: 30%;
+ background-color: white;
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+ justify-content: center;
+ align-items: center;
+ padding: 1em;
+}
+.replay {
+ padding: 0.3em;
+ background-color: brown;
+ color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 60%;
+  }
+    main {
+      margin-top: 30%;
+    }
+    .game {
+      width: 60%;
+    }
+    .game-end {
+      width: 60%;
+    }
+}
